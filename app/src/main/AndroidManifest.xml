@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.bkt2">
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,6 +14,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BKT2"
         tools:targetApi="31">
+        <activity
+            android:name=".signup"
+            android:exported="false" />
+        <activity
+            android:name=".AddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Page"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
